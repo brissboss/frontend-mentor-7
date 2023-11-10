@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    list-style-type: none;
+}
+
+body {
+    height: 100dvh;
+    width: 100dvw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(0, 0%, 86%);
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.card {
+    width: 90%;
+
+    border-radius: 20px 20px 100px 20px;
+
+    background-color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 0 60px;
+    margin: 0 20px;
+    margin-bottom: 50px;
+
+    position: relative;
+
+    border-bottom: 2px solid hsl(0, 1%, 90%);
+
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    
+    width: 30%;
+}
+
+.input label {
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: hsl(0, 1%, 44%);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.input input {    
+    width: 77%;
+    height: 40px;
+    font-size: 20px;
+
+    padding: 0px 0px 0px 15px;
+
+    border-radius: 5px;
+    
+    border: 1px solid hsl(0, 1%, 70%);
+}
+
+.button-submit {
+    position: absolute;
+
+    bottom: -35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 35px 0 0px;
+}
+
+.form img {
+    width: 30px;
+
+    border-radius: 100%;
+    padding: 20px;
+
+    background-color: hsl(259, 100%, 65%);
+}
+
+.result {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 42px;
+    line-height: 45px;
+
+    padding: 0 0 30px;
+    margin: 0 20px;
+}
+
+strong {
+    color: hsl(259, 100%, 65%);
+}
+
+@media (min-width: 540px) {
+    .form {
+        align-items: flex-start;
+        padding: 40px 0 50px;
+        margin: 0 50px;
+        margin-bottom: 50px;
+    }
+
+    .date {
+        justify-content: flex-start;
+        width: 90%;
+    }
+
+    .input input {
+        height: 60px;
+        font-size: 22px;
+    }
+
+    .button-submit {
+        bottom: -42px;
+    }
+
+    .form img {
+        width: 45px;
+    }
+
+    .button-submit {
+        justify-content: flex-end;
+    }
+
+    .result {
+        font-size: 71px;
+        line-height: 100px;
+        margin: 0 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: min(90dvw, 47rem);
+    }
+
+    .date {
+        width: 85%;
+    }
+
+    .input input {
+        height: 60px;
+        font-size: 30px;
+    }
+
+    .result {
+        font-size: 85px;
+    }
+}
