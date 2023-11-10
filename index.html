@@ -21,14 +21,23 @@
 				<div class="input">
 					<label for="day">day</label>
 					<input type="number" name="Day" id="day" placeholder="DD">
+					<p class="error-message">
+						This field is required
+					</p>
 				</div>
 				<div class="input">
 					<label for="month">month</label>
 					<input type="number" name="Month" id="month" placeholder="MM">
+					<p class="error-message">
+						This field is required
+					</p>
 				</div>
 				<div class="input">
 					<label for="year">year</label>
 					<input type="number" name="Year" id="year" placeholder="YYYY">
+					<p class="error-message">
+						This field is required
+					</p>
 				</div>
 			</div>
 			<div class="button-submit">
@@ -38,13 +47,13 @@
 		</form>
 		<div class="result">
 			<p class="year">
-				<strong>--</strong> years
+				<strong id="years">--</strong> years
 			</p>
 			<p class="month">
-				<strong>--</strong> months
+				<strong id="months">--</strong> months
 			</p>
 			<p class="day">
-				<strong>--</strong> days
+				<strong id="days">--</strong> days
 			</p>
 		</div>
 	</div>
