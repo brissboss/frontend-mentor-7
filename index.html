@@ -10,39 +10,40 @@
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap">
 
+	<script src="/script.js" async></script>
+
 	<title>Frontend Mentor | Age calculator app</title>
 
 </head>
 
 <body>
 	<div class="card">
-		<form class="form">
+		<form class="form" id="form">
 			<div class="date">
-				<div class="input">
+				<div class="input" id="div-Day">
 					<label for="day">day</label>
 					<input type="number" name="Day" id="day" placeholder="DD">
-					<p class="error-message">
+					<p class="error-message" id="day-error">
 						This field is required
 					</p>
 				</div>
-				<div class="input">
+				<div class="input" id="div-Month">
 					<label for="month">month</label>
 					<input type="number" name="Month" id="month" placeholder="MM">
-					<p class="error-message">
+					<p class="error-message" id="month-error">
 						This field is required
 					</p>
 				</div>
-				<div class="input">
+				<div class="input" id="div-Year">
 					<label for="year">year</label>
 					<input type="number" name="Year" id="year" placeholder="YYYY">
-					<p class="error-message">
+					<p class="error-message" id="year-error">
 						This field is required
 					</p>
 				</div>
 			</div>
 			<div class="button-submit">
-				<input type="submit" value="">
-				<img src="/assets/images/icon-arrow.svg" alt="">
+				<input type="image" src="/assets/images/icon-arrow.svg" alt="submit" class="submit-button">
 			</div>
 		</form>
 		<div class="result">

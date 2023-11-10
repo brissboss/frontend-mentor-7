@@ -133,7 +133,7 @@ body {
     padding: 35px 0 0px;
 }
 
-.form img {
+.button-submit input {
     cursor: pointer;
     width: 30px;
 
@@ -147,9 +147,9 @@ body {
     transition-duration: 200ms;
 }
 
-.form img:hover {
+/* .button-submit img:hover {
     background-color: hsl(0, 0%, 8%);
-}
+} */
 
 .result {
     font-weight: 700;
@@ -184,10 +184,10 @@ strong {
     }
 
     .button-submit {
-        bottom: -42px;
+        bottom: -35px;
     }
 
-    .form img {
+    .submit-button {
         width: 45px;
     }
 
